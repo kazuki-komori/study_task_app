@@ -15,7 +15,7 @@
         <h1 class="mr-5 bg-warning">
           push this button=>
         </h1>
-        <a class="button--green mr-5" href="#" @click="sendApi">send API</a>
+        <a class="button--green mr-5" href="#" @click="sendApi">create new task</a>
         <h3 class="mr-5">
           ADD TASK =>
         </h3>
@@ -31,7 +31,7 @@
         <h1 class="mr-5 bg-warning">
           push this button=>
         </h1>
-        <a class="button--green mr-5" href="#" @click="deleteTask(taskId)">send API</a>
+        <a class="button--green mr-5" href="#" @click="deleteTask(taskId)">Delete task {{taskId}}</a>
         <h3 class="mr-5">
           DELETE TASK ID =>
         </h3>
