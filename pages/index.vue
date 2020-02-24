@@ -46,8 +46,9 @@
         <div class="col-md">id</div>
         <div class="col-md">name</div>
         <div class="col-md">created_at</div>
+        <div class="col-md"></div>
       </div>
-      <div v-for="task in data.tasks" class="row">
+      <div v-for="task in data.tasks" class="row m-2 pb-2 border-bottom">
         <div class="col-md">
           {{task.id}}
         </div>
@@ -56,6 +57,9 @@
         </div>
         <div class="col-md">
           {{task.created_at}}
+        </div>
+        <div class="col-md">
+          <a class="button--green" href="#" @click="deleteTask(task.id)">Delete</a>
         </div>
       </div>
     </div>
